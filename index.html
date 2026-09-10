@@ -4,31 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demo Webchat Botiax</title>
-    <link rel="icon" type="image/x-icon" href="bioparque-favicon.ico">
+  <link rel="icon" type="image/x-icon" href="bioparque-favicon.ico">
 
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      height: 100vh;
-      background: url("fondobioparque.png") center/cover no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    body {
+      /* Muestra la imagen alineada arriba al centro, ocupando todo el ancho */
+      background-image: url("fondobioparque.png");
+      background-position: top center;
+      background-size: 100% auto; /* Mantiene la proporción original de la web */
+      background-repeat: no-repeat;
+      background-color: #f4f4f4; /* Color de fondo por si la pantalla es muy larga */
+      
       font-family: sans-serif;
     }
+
     .contenedor {
-      background: rgba(255,255,255,0.8);
+      background: rgba(255, 255, 255, 0.8);
       border-radius: 16px;
       padding: 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       text-align: center;
+      max-width: 400px;
+      margin: 50px auto; /* Para centrarlo si usas un contenedor encima */
     }
   </style>
 </head>
 <body>
 
-  <!-- 👇 Pegá acá tu script del webchat -->
-<script id='_1186_ws_chat' src='https://statics.botiax.com/cgc/webchat/production/widget.js' config='eyJjb25maWdJZCI6Ii14eHlyLXE4dWZmN2NyZiIsIndzVG9rZW4iOiJNMDJpUEFFUUdLa0hPdUp6c0dkcjhUN3RxVTFNT01zU0ZHY3JKTWZ0bEVUeUciLCJiYWNrU2VydmVyIjoiaHR0cHM6Ly9iYWNrZW5kLmNnYy5ib3RpYXguY29tIiwid3NTZXJ2ZXIiOiJ3c3M6Ly93cy5iYWNrZW5kLmNnYy5ib3RpYXguY29tL2NoYW5uZWxzIiwiZW5hYmxlUmVjYXB0Y2hhIjp0cnVlfQ=='></script>
+  <!-- 👇 Tu script del webchat -->
+  <script id='_1186_ws_chat' src='https://statics.botiax.com/cgc/webchat/production/widget.js' config='eyJjb25maWdJZCI6Ii14eHlyLXE4dWZmN2NyZiIsIndzVG9rZW4iOiJNMDJpUEFFUUdLa0hPdUp6c0dkcjhUN3RxVTFNT01zU0ZHY3JKTWZ0bEVUeUciLCJiYWNrU2VydmVyIjoiaHR0cHM6Ly9iYWNrZW5kLmNnYy5ib3RpYXguY29tIiwid3NTZXJ2ZXIiOiJ3c3M6Ly93cy5iYWNrZW5kLmNnYy5ib3RpYXguY29tL2NoYW5uZWxzIiwiZW5hYmxlUmVjYXB0Y2hhIjp0cnVlfQ=='></script>
+
 </body>
 </html>
